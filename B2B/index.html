@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B2B</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --violeta1: #52559D;
+            --violeta2: #632581;
+            --violeta3: #5671A7;
+            --naranja1: #FF5515;
+            --amarillo1: #FFBF00;
+            --azul1: #1D70B7;
+        }
+
+        html, body {
+            font-family: 'Barlow', sans-serif;
+        }
+
+        .hero--image {
+            background: url(https://i.imgur.com/H3gdt7z.jpg);
+            background-size: cover;
+            background-position: center center;
+            min-height:560px;
+        }
+
+        .hero--subtitle {
+            padding-top: 1em;
+            padding-bottom: 1em;
+            font-size: 1.2em;
+            line-height: 1.2em;
+            text-align: center;
+            background-color: var(--violeta1);
+            color:#fff;
+        }
+
+        .hero--tit2 {
+            position: relative;
+            padding: 10px 25px;
+            background-color: var(--azul1);
+            color:#fff;
+            font-weight: 700;
+            font-size: 1.5em;
+            line-height: 1;
+            display: block;
+            border-radius: 10px;
+            z-index: 2;
+            max-width: 300px;
+            margin: 0 auto;
+        }
+        
+        .hero--subtit2 {
+            position: relative;
+            padding: 25px 25px 10px 25px;
+            background-color: var(--naranja1);
+            color:#fff;
+            font-weight: 400;
+            font-size: 1em;
+            line-height: 1;
+            display: block;
+            border-radius: 10px;
+            margin-top: -15px;
+            z-index: 1;
+        }
+
+        /***************************/
+        
+        .botones-container {
+            background-color: var(--naranja1);
+            padding-top: 1em;
+            padding-bottom: 1em;
+        }
+        
+        .boton {
+            font-size: 1.3em;
+            line-height: 1em;
+            color:#fff;
+        }
+        
+        .boton--texto {
+            padding-left: 15px;
+        }
+        
+        /***************************/
+
+        #imperdivel {
+            background-color: var(--violeta1);
+        }
+
+        #imperdivel .digital {
+            background-color: var(--violeta2);
+            color:#fff;
+            font-size: 1.7em;
+            line-height: 1em;
+            font-weight: 700;
+            text-align: right;
+            padding: .5em;
+            display: inline-block;
+        }
+        
+        #imperdivel .gratuito {
+            background: var(--amarillo1);  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, var(--naranja1), var(--amarillo1));  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, var(--naranja1), var(--amarillo1)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+            color:#fff;
+            font-size: 1.7em;
+            line-height: 1em;
+            font-weight: 700;
+            text-align: center;
+            padding: 0.5em;
+            display: inline-block;
+        }
+
+        #imperdivel .texto {
+            background-color: var(--naranja1);
+            font-size: 1em;
+            line-height: 1.2em;
+            font-weight: 400;
+            color:#fff;
+        }
+
+        #imperdivel .texto p:last-child {
+            margin-bottom: 0;
+        }
+
+        #imperdivel .titulo h2{
+            font-size: 3em;
+            line-height: 2em;
+            color:#fff;
+            font-weight: 800;
+            text-align: center;
+        }
+
+        #imperdivel .mic-texto {
+            font-size: 1.2em;
+            line-height: 1.2em;
+            color:#fff;
+            font-weight: 400;
+        }
+
+        #imperdivel .conexoes {
+            background-color: var(--azul1);
+            font-size: 1em;
+            line-height: 1em;
+            color:#fff;
+            font-weight: 400;
+            text-align: center;
+        }
+        
+        #imperdivel .conexoes span {
+            font-weight: 700;
+            font-size: 1.7em;
+            line-height: 1.4em;
+        }
+
+        /********************************/
+
+        #plataformas {
+            background-color: var(--naranja1);
+        }
+        #plataformas h2 {
+            font-size: 2em;
+            line-height: 1em;
+            color: #fff;
+            font-weight: 400;
+        }
+
+        #plataformas h2 span {
+            display: block;
+            font-weight: 700;
+        }
+
+        .plataformas--texto {
+            padding: 1em;
+            background-color: var(--azul1);
+            color:#fff;
+            font-size: 1em;
+            line-height: 1em;
+            font-weight: 400;
+            margin-left: 0px;
+        }
+
+        .plataformas--materiales {
+            padding: .7em;
+            background-color: var(--violeta2);
+            color:#fff;
+            font-size: 1.3em;
+            line-height: 24px;
+            font-weight: 400;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /**********************************/
+
+        #temario {
+            padding: 3em 0;
+            background-color: var(--violeta1);
+        }
+
+        #temario h2 {
+            color: #fff;
+            font-size: 2.5em;
+            line-height: .9em;
+            font-weight: 700;
+        }
+
+        #temario .temas {
+            background-color: var(--naranja1);
+            padding: 1em;
+            color:#fff;
+            font-size: 1em;
+            line-height: 1.2em;
+            font-weight: 400;
+        }
+
+        #temario .temas .temas--asset {
+            max-width: 62px;
+        }
+
+        #temario .temas ul li:not(:first-child) {
+            margin-top: 15px;
+        }
+
+        .border-left {
+            border-left:3px solid #ffffff;
+        }
+
+        /*************************************/
+
+        #contacto {
+            padding-top: 4em;
+            background-color: var(--naranja1);
+            color:#fff;
+            font-size: 1.2em;
+            line-height: 1.2em;
+            font-weight: 400;
+        }
+
+        #contacto a {
+            text-decoration: none;
+            color:#fff;
+        }
+
+        .bg-violeta1 {
+            background-color: var(--violeta1);
+        }
+
+        /*************************************/
+
+        #publico {
+            background-color: var(--violeta3);
+            padding: 3em 0 0;
+        }
+
+        .publico--txt {
+            background-color: var(--naranja1);
+            padding:1em 1em 2em 1em;
+            color:#fff;
+            text-align: left;
+            line-height: 1.1;
+        }
+
+        .publico--destaque {
+            background-color: var(--violeta1);
+            width: 80%;
+            display: block;
+            margin: 0 auto;
+            padding: .6em;
+            color:#fff;
+            margin-top: -30px;
+            font-size: 0.8em;
+        }
+
+        .publico--datos {
+            background-color: var(--violeta1);
+            padding: 1em;
+        }
+
+        .publico--datos h3 {
+            color:#fff;
+            font-size: 1.3em;
+            line-height: 1;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        .inscreva-se {
+            background-color: var(--violeta1);
+            padding: .7em;
+            font-size: 2.5em;
+            line-height: 1;
+            color:#fff;
+            font-weight: 700;
+        }
+        
+        .inscreva-se2 {
+            background-color: var(--violeta2);
+            padding: .7em;
+            font-size: 2.5em;
+            line-height: 1;
+            color:#fff;
+            font-weight: 700;
+        }
+
+        @media screen and (min-width:768px) {
+            .hero--image {
+                background: url(https://i.imgur.com/8A03La5.jpg);
+                background-size: cover;
+                background-position: center center;
+            }
+
+            #imperdivel .titulo h2 {
+                font-size: 4em;
+                line-height: 2em;
+            }
+
+            .plataformas--texto {
+                padding-left: 5em;
+            margin-left: -78px;
+        }
+
+        .plataformas--materiales {
+            line-height: 30px;
+        }
+            
+        }
+    </style>
+</head>
+<body>
+
+    <section id="hero">
+        <div class="container-fluid hero--image"></div>
+        <div class="container-fluid hero--subtitle">
+            <div class="row">
+                <div class="col-lg-5 mx-auto">
+                    <div class="hero--tit2">EDIÇÃO ESPECIAL!</div>
+                    <div class="hero--subtit2">A NOVA REALIDADE DO CICLO DE CRÉDITO A PMEs DURANTE E PÓS-PANDEMIA</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="botones">
+        <div class="container-fluid botones-container">
+            <div class="row">
+                <div class="col-lg-2 offset-lg-3 d-flex boton align-items-center justify-content-center">
+                    <div><a href="https://live.eventtia.com/es/b2b-2021/Brochure" target="_blank"><img src="https://i.imgur.com/c4nXbgp.png" alt=""></a></div>
+                    <div class="boton--texto"><a href="https://live.eventtia.com/es/b2b-2021/Brochure" target="_blank" style="text-decoration: none;color:#fff;">Brochure Digital</a></div>
+                </div>
+                <div class="col-lg-2 d-flex boton align-items-center justify-content-center mt-3 mt-lg-0">
+                    <div><a href="https://live.eventtia.com/es/b2b-2021/Programacao"><img src="https://i.imgur.com/c4nXbgp.png" alt=""></a></div>
+                    <div class="boton--texto"><a href="https://live.eventtia.com/es/b2b-2021/Programacao" target="_blank" style="text-decoration: none;color:#fff;">Programação</a></div>
+                </div>
+                <div class="col-lg-2 d-flex boton align-items-center justify-content-center mt-3 mt-lg-0">
+                    <div><a href="mailto:madi@cmspeople.com" target="_blank"><img src="https://i.imgur.com/DLaUHcT.png" alt=""></a></div>
+                    <div class="boton--texto"><a href="mailto:madi@cmspeople.com" target="_blank" style="text-decoration: none;color:#fff;">Patrocinar</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="imperdivel">
+        <div class="container">
+            <div class="row pt-5 pb-4 g-0">
+                <div class="col-lg-3 offset-lg-3 text-center text-lg-end">
+                    <div class="digital">100% DIGITAL!</div>
+                </div>
+                <div class="col-lg-3 text-center text-lg-start mt-3 mt-lg-0">
+                    <div class="gratuito">100% GRATUITO</div>
+                </div>
+            </div>
+            <div class="row g-0 pb-3">
+                <div class="col-lg-8 offset-lg-2 p-3 texto">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <p>A 1ª edição do Fórum Digital, em 2020, contou com inúmeras dinâmicas para fornecer mais CONTEÚDO, INTERAÇÃO, com participação de +500 players e especialistas que vivenciam e NETWORKING, tudo isso por meio da plataforma de eventos do mundo do Crédito Corporativo no Brasil.</p>
+                                <p>Para 2021, teremos uma edição especial com foco em uma demanda emergente no cenário nacional, especialmente em função da Pandemia do Coronavírus: a relação do ciclo de crédito com a sobrevivência e crescimento de PMEs no Brasil.</p>
+                            </div>
+                            <div class="col-lg-6">
+                                <p>Afinal, em um momento de instabilidade econômica agravada pela necessidade de distanciamento social, fechamentos de comércio e novas restrições de circulação, o ciclo de crédito se tornou um fator decisivo para as PMEs, cuja atividade representa cerca de 27% do PIB e gera mais de 70% dos empregos no país.</p>
+                                <p><strong>BEM-VIND@S AO MAIS IMPORTANTE FÓRUM DE CICLO DE CRÉDITO PJ DO BRASIL! CONHEÇA AQUI AS MELHORES PRÁTICAS DE GESTÃO DE RISCO, CRÉDITO E RECUPERAÇÃO DE DÍVIDAS VOLTADAS A PEQUENAS E MÉDIAS EMPRESAS.</strong></p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3 titulo">
+                    <h2>IMPERDÍVEL!</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-1 offset-lg-3 d-flex align-items-center justify-content-center justify-content-lg-end">
+                    <div>
+                        <img src="https://i.imgur.com/bSY3vTb.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-5 d-flex align-items-center text-center text-lg-start mt-2 mt-lg-0">
+                    <div class="mic-texto">
+                        Masterclasses // Networking Meetings // Sessões mais interativas // Entrevistas Exclusivas // Pergunte ao Decision Maker // Best Solutions // Debates e muito mais!
+                    </div>
+                </div>
+            </div>
+            <div class="row py-5">
+                <div class="col-lg-8 mx-auto">
+                    <img src="https://i.imgur.com/aV4twuv.png" alt="" class="d-lg-block d-none img-fluid mx-auto">
+                    <img src="https://i.imgur.com/q8Dy82J.png" alt="" class="d-lg-none d-block img-fluid mx-auto">
+                </div>
+            </div>
+            <div class="row pb-3">
+                <div class="col-lg-6 offset-lg-3 conexoes p-3">Criamos o ambiente ideal para você se conectar ao mundo do ciclo de crédito B2B<br><span>interagir muito e fazer grandes conexões!</span></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="plataformas">
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-lg-4 offset-lg-2">
+                    <h2>PLATAFORMAS<span>INTERCONECTADAS</span></h2>
+                </div>
+                <div class="col-lg-4">
+                    <img src="https://i.imgur.com/oTzXGV8.png" alt="" class="float-end">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 offset-lg-1">
+                    <img src="https://i.imgur.com/j18jOZE.png" alt="" class="img-fluid float-end plataformas--asset">
+                </div>
+                <div class="col-lg-4 d-flex align-items-center">
+                    <div class="plataformas--texto">
+                        <p>No CMS 365 o aplicativo mobile e a plataforma web trabalham interconectadas para complementar e ampliar a interatividade e o acesso aos conteúdos de cada evento para gerar essa experiência 365:</p>
+                        <p>Acesse CMS 365 via web e app de qualquer dispositivo, ao mesmo tempo, para sua comodidade.</p>
+                        <p>Até 1 semana de conteúdos exclusivos em cada evento, com inéditas oportunidades de interação e networking com os participantes registrados.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3 pb-5">
+                <div class="col-lg-6 mx-auto">
+                    <div class="plataformas--materiales">
+                        <div><img src="https://i.imgur.com/PNPcxSS.png" alt=""></div>
+                        <div class="ms-2"><strong>30 dias de materiais exclusivos</strong>, mesmo depois do evento.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col inscreva-se2 text-center"><a href="https://live.eventtia.com/es/b2b-2021/Inscricao-gratuita/" target="_blank" style="text-decoration: none;color:#fff;">Inscreva-se já!</a></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="temario">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 mx-auto d-flex align-items-center justify-content-center">
+                    <div><img src="https://i.imgur.com/uSQIcl8.png" alt="" class="img-fluid"></div>
+                    <h2 class="ms-3">SOBRE O QUE<br>VAMOS FALAR?</h2>
+                </div>
+            </div>
+            <div class="row pt-4">
+                <div class="col-lg-10 mx-auto temas">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <img src="https://i.imgur.com/VKUtc6o.png" alt="Asset B2B" class="temas--asset img-fluid d-block">
+                            <h2 class="pt-1">PMEs</h2>
+                            <ul class="pt-3 ps-4">
+                                <li>Os impactos da pandemia para as PMEs brasileiras: realidade em números</li>
+                                <li>Conheça os deveres e obrigações de administradores societários em situação de insolvência iminente. O que fazer?</li>
+                                <li>O retrato do e-commerce pós-pandemia: digitalização das vendas é irreversível?</li>
+                                <li>Depois da tempestade: caminhos para a retomada</li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4 border-left">
+                            <img src="https://i.imgur.com/8eku8tK.png" alt="Asset B2B" class="temas--asset img-fluid d-block">
+                            <h2 class="pt-1">CRÉDITO / RISCO</h2>
+                            <ul class="pt-3 ps-4">
+                                <li>Como avaliar o risco de crédito a PMEs e Autônomos no cenário da pandemia?</li>
+                                <li>Afinal, o crédito está chegando aos pequenos e médios empreendedores?</li>
+                                <li>Pronampe: uma luz no fim do túnel?</li>
+                                <li>Financiamento público e privado como base de apoio a PMEs na crise da Covid-19</li>
+                                <li>Fintechs entram em campo pelo apoio tecnológico, concessão de crédito e consultoria a PMEs</li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4 border-left">
+                            <img src="https://i.imgur.com/Awauno9.png" alt="Asset B2B" class="temas--asset img-fluid d-block">
+                            <h2 class="pt-1">COBRANÇA</h2>
+                            <ul class="pt-3 ps-4">
+                                <li>A Recuperação de Crédito em momento de pandemia: empatia e gestão humanizada do processo de cobrança</li>
+                                <li>Tecnologia a favor da recuperação de crédito PJ: o que pode aportar a digitalização da cobrança</li>
+                                <li>Recuperando mais que o crédito: recuperando empresas, recuperando o país</li>
+                                <li>Como o setor de Serviços está se preparando para a gestão da recuperação no setor de PME. Qual será sua estratégia?</li>
+                                <li>Recuperação judicial: como melhorar o processo e como evitar chegar à esfera judicial?</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-4">
+                <div class="col text-center">
+                    <p class="fs-2 fw-bold ps-3 text-white">E muito mais!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="publico">
+        <div class="container">
+            <div class="row mb-3">
+                <div class="col-lg-4 offset-lg-2">
+                    <div class="publico--txt">
+                        <h2 class="fs-2 fw-bold">QUEM NÃO PODE<br>PERDER?</h2>
+                        <p>O B2B Credit Forum é voltado a lideranças, executivos, equipes e profissionais liberais dos seguintes segmentos:</p>
+                        <p>Bancos e financeiras ligados aos setores de crédito e cobrança PJ. | Áreas financeira, administrativa, contas a receber de empresas e indústrias diversas (alimentícia, beleza, agropecuária, bens de capital, petroquímicos, farmacêutico, têxtil, eletroeletrônico, construção civil, entre outras) que lidam com políticas e gestão internas de crédito e cobrança PJ. | Empresas provedoras de tecnologias e serviços diversos voltados ao ciclo de crédito PJ | Empresas de cobrança | Seguradoras | Empresas de análise de risco | Empresas de inteligência de dados | Birôs de crédito | Consultorias | FIDC | Factoring | Empresas de compra e venda de carteiras PJ | Fintechs</p>
+                    </div>
+                    <div class="publico--destaque">
+                        <h2 class="fs-2 fw-bold text-white">E MAIS!</h2>
+                        <p>GESTORES DE PMEs E TODO O ECOSSISTEMA VOLTADO À GESTÃO DE CRÉDITO, RISCO E COBRANÇA DE PMEs.</p>
+                    </div>
+                </div>
+                <div class="col-lg-5 mt-lg-0 mt-3">
+                    <div class="publico--datos">
+                        <h3>Feito para Líderes de hoje e do amanhã</h3>
+                        <img src="https://i.imgur.com/3DRy5gz.png" alt="" class="d-block img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col inscreva-se text-center"><a href="https://live.eventtia.com/es/b2b-2021/Inscricao-gratuita/" target="_blank" style="text-decoration: none;color:#fff;">Inscreva-se já!</a></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 text-start text-lg-end">
+                    <strong>» Comercial:</strong><br>
+                    Madleine Rose Sprocatti<br>
+                    Diretora Comercial CMS Brasil<br>
+                    <a href="mailto:madi@cmspeople.com" target="_blank">madi@cmspeople.com</a><br>
+                    +55 11 3868 2883 / +55 9 4508 4595<br>
+                    +55 11 99161 5757
+                </div>
+                <div class="col-lg-6 text-start mt-2 mt-lg-0">
+                    <strong>» Informações gerais:</strong><br>
+                    Elane Cortez<br>
+                    Diretora de Desenvolvimento <br>
+                    Corporativo Brasil<br>
+                    <a href="mailto:e.cortez@cmspeople.com" target="_blank">e.cortez@cmspeople.com</a><br>
+                    +55 11 2609 7946
+                </div>
+            </div>
+            <div class="row bg-violeta1 mt-4">
+                <div class="col-lg-4 offset-lg-4 text-center p-3 fs-4">
+                    O mais completo fórum digital para empresas, indústrias,
+provedores e profissionais do Crédito e Cobrança PJ.
+                </div>
+            </div>
+            <div class="row botones-container">
+                <div class="col-lg-2 offset-lg-3 d-flex boton align-items-center justify-content-center">
+                    <div><a href="https://live.eventtia.com/es/b2b-2021/Brochure" target="_blank"><img src="https://i.imgur.com/c4nXbgp.png" alt=""></a></div>
+                    <div class="boton--texto"><a href="https://live.eventtia.com/es/b2b-2021/Brochure" target="_blank" style="text-decoration: none;color:#fff;">Brochure Digital</a></div>
+                </div>
+                <div class="col-lg-2 d-flex boton align-items-center justify-content-center mt-3 mt-lg-0">
+                    <div><a href="https://live.eventtia.com/es/b2b-2021/Programacao"><img src="https://i.imgur.com/c4nXbgp.png" alt=""></a></div>
+                    <div class="boton--texto"><a href="https://live.eventtia.com/es/b2b-2021/Programacao" target="_blank" style="text-decoration: none;color:#fff;">Programação</a></div>
+                </div>
+                <div class="col-lg-2 d-flex boton align-items-center justify-content-center mt-3 mt-lg-0">
+                    <div><a href="mailto:madi@cmspeople.com" target="_blank"><img src="https://i.imgur.com/DLaUHcT.png" alt=""></a></div>
+                    <div class="boton--texto"><a href="mailto:madi@cmspeople.com" target="_blank" style="text-decoration: none;color:#fff;">Patrocinar</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pre-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mx-auto">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+</body>
+</html>

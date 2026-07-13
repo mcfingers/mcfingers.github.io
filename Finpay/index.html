@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fin&amp;Pay</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+
+    <style>
+        :root {
+            --color1: #273136;
+            --color2: #E8A022;
+            --color3: #FFDD00;
+            --color4: #FF00AC;
+            --color5: #FF8300;
+        }
+        body {
+            color: #273136;
+            font-family: 'Barlow', sans-serif;
+        }
+        .hero {
+            background: url(https://i.imgur.com/zJSIV8m.jpg);
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            min-height: 570px;
+            padding-top: 100px;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 1.1;
+        }
+
+
+        .hero--logo-finpay {
+            width: 100%;
+            max-width: 550px;   
+        }
+
+        .hero--logo-ami {
+            max-width: 240px;
+            margin:0 auto;
+        }
+        
+        .hero--logo-cms365 {
+            max-width: 214px;
+            margin:0 auto;
+        }
+
+        .hero .fecha {
+            display: inline-block;
+            margin: 0 auto;
+            background: rgb(229,153,0);
+            background: -moz-linear-gradient(left,  rgba(229,153,0,1) 0%, rgba(249,203,11,1) 100%);
+            background: -webkit-linear-gradient(left,  rgba(229,153,0,1) 0%,rgba(249,203,11,1) 100%);
+            background: linear-gradient(to right,  rgba(229,153,0,1) 0%,rgba(249,203,11,1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e59900', endColorstr='#f9cb0b',GradientType=1 );
+            padding:7px 25px;
+            color:#ffffff;
+            border-radius:10px;
+            font-size: 20px;
+            line-height: 1.1;
+            font-weight: 300;
+        }
+
+        .registration {
+            background-color: #273136;
+            color:#ffffff;
+        }
+
+        .numeros {
+            background-color: #ECEBEA;
+        }
+
+        .numeros .num {
+            font-size: 48px;
+            font-weight: 700;
+        }
+
+        .numeros .txt {
+            font-size: 17px;
+            font-weight: 500;
+            line-height: 1;
+        }
+
+        .numeros .separador {
+            height: 60px;
+            width:3px;
+            background-color: #E8A022;
+            margin: 0 10px;
+        }
+
+        .vuelve {
+            background-color: #273136;
+            color:#ffffff;
+            font-size: 18px;
+            line-height: 1.2;
+            font-weight: 400;
+        }
+
+        .vuelve h3 {
+            color:#E8A022;
+            font-size: 32px;
+            line-height: 1.2;
+            font-weight: 700;
+        }
+
+        .cms365mobile {
+            background-color: #ECEBEA;
+            color:#273136;
+            font-size: 15px;
+        }
+
+        .separador2 {
+            width:80%;
+            height: 2px;
+            background-color: #E8A022;
+            margin: 20px 0;
+        }
+
+        .temas {
+            background-color: #273136;
+            background-image: url(https://i.imgur.com/n5fLTgZ.png);
+            background-size: contain;
+            background-position: center top;
+            background-repeat: no-repeat;
+            padding: 0 10%;
+        }
+
+        .temas h3 {
+            color:#E8A022;
+            font-size: 28px;
+        }
+
+        .temas h3 span {
+            color:#ffffff;
+            font-size: 36px;
+            line-height: .9;
+        }
+
+        .temas-col {
+            background-color: #fff;
+            border-radius: 7px;
+            min-height: 480px;
+        }
+
+        .temas-col h2 {
+            font-size: 30px;
+            line-height: .9;
+            font-weight: 500;
+        }
+
+        .temas-col ul li {
+            font-size: 16px;
+            line-height: 1.1;
+        }
+
+        .numeros2020 {
+            background-image: url(https://i.imgur.com/XFqIIqp.jpg);
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        .numeros2020 .panel {
+            background-color:#273136;
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        .numeros2020 .info {
+            display: flex;
+            align-items: center;
+        }
+
+        .numeros2020 .info h2 {
+            font-size: 50px;
+            line-height: 50px;
+            margin: 0;
+            font-weight: 700;
+        }
+        
+        .numeros2020 .info p {
+            margin: 0;
+            color: #ffffff;
+            font-size: 14px;
+            line-height: 1;
+        }
+
+        .numeros2020 .data {
+            padding-left: 10px;
+        }
+        
+        .numeros2020 .info.info1 h2, .numeros2020 .info.info4 h2 {
+            color: var(--color3);
+        }
+        .numeros2020 .info.info2 h2, .numeros2020 .info.info5 h2 {
+            color: var(--color4);
+        }
+        .numeros2020 .info.info3 h2, .numeros2020 .info.info6 h2 {
+            color: var(--color5);
+        }
+
+        .participan {
+            background-color:#273136;
+            text-align: center;
+        }
+
+        .participan h2 {
+            color:#fff;
+            font-weight: 700;
+            font-size: 36px;
+        }
+
+        .participan h3 {
+            color: var(--color2);
+            font-size: 17px;
+            font-weight: 500;
+        }
+
+        .participan h3 span {
+            color:#fff;
+        }
+
+        .participan .lista {
+            font-size: 13px;
+            color:#fff;
+        }
+
+        .participan .lista span {
+            color: var(--color2);
+        }
+
+        .participantes {
+            background-color: #181D00;
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        .participantes .titulo {
+            background-color: var(--color2);
+            display: inline-block;
+            position: relative;
+            top: -40px;
+            padding: 10px 20px;
+            border-radius: 7px;
+            color:#fff;
+            font-size: 18px;
+            font-weight: 400;
+        }
+
+        .participantes .numeros {
+            display: flex;
+            align-items: flex-start;
+            background-color: #181D00;
+            flex-direction: row;
+        }
+
+        .participantes .numeros-info {
+            text-align: left;
+            padding-left: 15px;
+        }
+
+        .participantes .numeros-info h2 {
+            font-weight: 300;
+            color:#fff;
+            font-size: 30px;
+            line-height: 1;
+            margin: 0;
+        }
+        
+        .participantes .numeros-info h3 {
+            font-weight: 300;
+            color:#fff;
+            font-size: 20px;
+            line-height: 1.1;
+            margin: 0;
+        }
+        
+        .participantes .numeros-info p {
+            font-weight: 300;
+            color:#fff;
+            font-size: 12px;
+            line-height: 1.1;
+            margin: 0;
+        }
+
+        .pre-footer {
+            background-color: var(--color2);
+        }
+
+        .pre-footer h2 {
+            color:#fff;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 1;
+            text-transform: uppercase;
+        }
+        
+        .pre-footer .botones a {
+            text-decoration: none;
+            color:#fff;
+            font-size: 17px;
+        }
+
+        .inscripcion {
+            background-color: var(--color2);
+        }
+
+        .inscripcion a {
+            font-size: 3em;
+            line-height: 1em;
+            font-weight: 500;
+            color: var(--color1);
+            text-decoration: none;
+            letter-spacing: -1px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container-fluid hero">
+        <div class="row">
+            <div class="col-lg-4 d-flex flex-column flex-lg-row justify-content-center justify-content-lg-start  align-items-center mx-auto mt-3 mt-lg-0">
+                <img src="https://i.imgur.com/cF31Iye.png" alt="" class="d-block mb-2 mb-lg-0 me-lg-2 hero--logo">
+                <img src="https://i.imgur.com/7cSlqfe.png" alt="" class="d-block img-fluid hero--logo-finpay">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 mx-auto text-center">
+                <p class="mt-2 text-center">Los principales players latinoamericanos en <span style="font-weight: 700;">Innovación Financiera, Banking y Payments </span> construyendo el futuro del segmento</p>
+                <div class="fecha">24, 25 y 26 de agosto de 2021</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 mx-auto text-center">
+                <a href="https://americasmi.com/" target="_blank"><img src="https://i.imgur.com/EIHGwZA.png" alt="" class="d-block img-fluid hero--logo-ami mt-4"></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 mx-auto text-center">
+                <img src="https://i.imgur.com/NrmD5vr.png" alt="" class="d-block img-fluid hero--logo-cms365 mt-4">
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid registration">
+        <div class="row">
+            <div class="col py-3 d-flex justify-content-center align-items-center">
+                <div><a href="" style="font-size: 2.5em;font-weight: 700;text-decoration: none;color:#fff;">INSCRIPCIÓN GRATUITA</a></div>
+                <div class="ms-3">
+                    <svg version="1.0"
+                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+                         x="0px" y="0px" width="79.2px" height="57.4px" viewBox="0 0 79.2 57.4" style="enable-background:new 0 0 79.2 57.4;"
+                         xml:space="preserve">
+                    <defs>
+                    </defs>
+                    <g>
+                        <path style="fill:#ECEBEA;" d="M51.6,6.9c-1.7,1.5-2.2,3.7-1.4,5.7l-0.3-0.3c-2-2-5.3-2.2-7.4-0.3c-2.1,2-2.2,5.4-0.1,7.5l-0.9-0.9
+                            c-2-2-5.3-2.2-7.4-0.3c-2.1,2-2.2,5.4-0.1,7.5L20.1,12.1c-2-2-5.3-2.2-7.4-0.3c-2.1,2-2.2,5.4-0.1,7.5l20.8,20.8
+                            c-4-0.4-8.1-0.1-11.9,1.1c-0.8,0.2-1.5,0.7-2.1,1.2c-1.6,1.6-1.9,4-0.7,6c1.2,2,3.6,2.7,5.8,2.1c8.9-2.5,18.3,1.9,26.3,5.4
+                            c3.9,1.7,11.8,3.6,19.3-4l4.4-4.4c10.1-10.1,1.3-23.2-0.9-25.4l-0.9-0.9L62,10.5l-3.1-3.1C56.8,5.3,53.6,5.1,51.6,6.9z"/>
+                        <g>
+                            <line style="fill:none;stroke:#ECEBEA;stroke-width:0.7352;stroke-miterlimit:10;" x1="13.6" y1="24.9" x2="13.1" y2="19.4"/>
+                            <line style="fill:none;stroke:#ECEBEA;stroke-width:0.7352;stroke-miterlimit:10;" x1="9.3" y1="24.6" x2="10.7" y2="19.2"/>
+                            <line style="fill:none;stroke:#ECEBEA;stroke-width:0.7352;stroke-miterlimit:10;" x1="5.4" y1="22.8" x2="8.6" y2="18.2"/>
+                            <line style="fill:none;stroke:#ECEBEA;stroke-width:0.7352;stroke-miterlimit:10;" x1="2.3" y1="19.7" x2="6.8" y2="16.5"/>
+                            <line style="fill:none;stroke:#ECEBEA;stroke-width:0.7352;stroke-miterlimit:10;" x1="0.5" y1="15.9" x2="5.8" y2="14.3"/>
+                            <line style="fill:none;stroke:#ECEBEA;stroke-width:0.7352;stroke-miterlimit:10;" x1="0" y1="11.6" x2="5.6" y2="12"/>
+                            <line style="fill:none;stroke:#ECEBEA;stroke-width:0.7352;stroke-miterlimit:10;" x1="1.1" y1="7.4" x2="6.2" y2="9.6"/>
+                            <line style="fill:none;stroke:#ECEBEA;stroke-width:0.7352;stroke-miterlimit:10;" x1="3.5" y1="3.8" x2="7.5" y2="7.6"/>
+                            <line style="fill:none;stroke:#ECEBEA;stroke-width:0.7352;stroke-miterlimit:10;" x1="7" y1="1.2" x2="9.4" y2="6.2"/>
+                            <line style="fill:none;stroke:#ECEBEA;stroke-width:0.7352;stroke-miterlimit:10;" x1="11.1" y1="0" x2="11.7" y2="5.6"/>
+                            <line style="fill:none;stroke:#ECEBEA;stroke-width:0.7352;stroke-miterlimit:10;" x1="15.4" y1="0.3" x2="14.1" y2="5.7"/>
+                            <line style="fill:none;stroke:#ECEBEA;stroke-width:0.7352;stroke-miterlimit:10;" x1="19.4" y1="2" x2="16.3" y2="6.7"/>
+                            <line style="fill:none;stroke:#ECEBEA;stroke-width:0.7352;stroke-miterlimit:10;" x1="22.5" y1="5" x2="18.1" y2="8.3"/>
+                            <line style="fill:none;stroke:#ECEBEA;stroke-width:0.7352;stroke-miterlimit:10;" x1="24.5" y1="8.9" x2="19.2" y2="10.5"/>
+                            <line style="fill:none;stroke:#ECEBEA;stroke-width:0.7352;stroke-miterlimit:10;" x1="25" y1="13.2" x2="19.4" y2="12.9"/>
+                        </g>
+                    </g>
+                    </svg>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid numeros">
+        <div class="row">
+            <div class="col-lg-6 d-flex justify-content-end align-items-center py-4">
+                <div class="num">+60</div>
+                <div class="txt px-1">Speakers</div>
+                <div class="separador"></div>
+                <div class="num ps-1">3</div>
+                <div class="txt px-1">días de<br>programación<br>en VIVO</div>
+                <div class="separador d-none d-lg-block"></div>
+            </div>
+            <div class="col-lg-6 d-flex justify-content-start align-items-center py-4">
+                <div class="num ps-1">2</div>
+                <div class="txt px-1">salas de<br>
+                    contenidos en<br>
+                    Español y Portugués</div>
+                <div class="separador"></div>
+                <div class="num ps-1">+20</div>
+                <div class="txt px-1">horas de<br>
+                    contenidos<br>
+                    A LA CARTA</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="https://i.imgur.com/nkzglIW.jpg" alt="" class="d-lg-block d-none img-fluid">
+                <img src="https://i.imgur.com/uWKvtBd.jpg" alt="" class="d-lg-none d-block img-fluid">
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid inscripcion">
+        <div class="row">
+            <div class="col text-center py-4">
+                <a href="https://live.eventtia.com/es/finpay2021/Inscripcion-gratuita" target="_self">INSCRIPCIÓN GRATUITA</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid vuelve">
+        <div class="row">
+            <div class="col-lg-4 offset-lg-4 text-center py-3">
+                <p>Más de 2000 personas de toda América Latina participaron en el último Fin & Pay Latam Digital Week en 2020, 100% digital.</p>
+                <h3>Este gran éxito vuelve este año ¡mucho más grande!</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid cms365mobile">
+        <div class="row py-4">
+            <div class="col-lg-6 d-flex align-items-center justify-content-start justify-content-lg-end">
+                <img src="https://i.imgur.com/MCUxkvn.png" alt="" class="d-block img-fluid">
+            </div>
+            <div class="col-lg-5 pt-lg-0 pt-4 d-flex align-items-center">
+                <div>
+                    <p><strong>En CMS365, la aplicación móvil y la plataforma web</strong> trabajan interconectadas para complementar y ampliar la interactividad y el acceso a los contenidos de cada evento para generar esa experiencia 365:</p>
+                    <p><strong>Acceso vía web y app a CMS365: en cualquier dispositivo al mismo tiempo para su conveniencia.</strong></p>
+                    <p>Hasta 1 semana de contenido exclusivo en cada evento, con oportunidades sin precedentes para la interacción y networking con participantes.</p>
+                    <div class="separador2"></div>
+                    <p><strong>2 salas con diferentes contenidos en vivo (una en español y una en Portugués) o a la carta (a través de streaming) con conferencias, debates y presentaciones con los más grandes experts de la industria de América Latina.</strong></p>
+                    <p>El público interactúa con los experts a través de chats, encuestas y preguntas a los oradores y sabe quién está viendo los contenidos en vivo.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid temas">
+        <div class="row pt-5 pb-3">
+            <div class="col-lg-1 d-flex align-items-center offset-lg-4 justify-content-lg-end justify-content-start">
+                <img src="https://i.imgur.com/jFVEJWF.png" alt="" class="">
+            </div>
+            <div class="col-lg-4 d-flex align-items-center">
+                <div>
+                    <h3>¿Sobre qué<br><span>vamos a hablar?</span></h3>
+                    <img src="https://i.imgur.com/2Dx0NBS.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="row pt-3 pb-5 gy-3">
+            <div class="col-lg-4">
+                <div class="temas-col p-3">
+                    <h2>BANKING</h2>
+                    <ul class="list-unstyled mt-3">
+                        <li>» Open Banking: amenaza u oportunidad para los bancos?</li>
+                        <li>» Los desafíos y el futuro de los grandes emisores de tarjetas</li>
+                        <li>» El nuevo consumidor bancario y sus necesidades</li>
+                        <li>» Bancos y Fintechs: asociación o competencia en pagos?</li>
+                        <li>» Pagos instantáneos: impactos para ingresos bancarios</li>
+                        <li>» Banco como servicio, ¿plataforma o Mercado?</li>
+                        <li>» La siguiente etapa de transformación digital bancaria</li>
+                        <li>» Desarrollando su estrategia APIs</li>
+                        <li>» Análisis y Big Data como base para nuevas estrategias en pagos & Identificación</li>
+                        <li>» Y mucho +</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="temas-col p-3">
+                    <h2>PAYMENTS</h2>
+                    <ul class="list-unstyled mt-3">
+                        <li>» Impacto y oportunidades de pagos instantáneos</li>
+                        <li>» Evolución de la billetera digital</li>
+                        <li>» Recompensas de fidelidad en tiempo real</li>
+                        <li>» Super APPs</li>
+                        <li>» Pagos móviles</li>
+                        <li>» Biometría</li>
+                        <li>» Cryptodatos</li>
+                        <li>» Pagos P2P</li>
+                        <li>» Pagos invisibles</li>
+                        <li>» IoT y pagos activados por voz</li>
+                        <li>» Fraude: enfrentando el desafío de la seguridad</li>
+                        <li>» Experiencia del cliente: CX como foco de un nuevo modelo de negocios en pagos</li>
+                        <li>» Cultura brasilera en pagos y cambio de mindset</li>
+                        <li>» Pagos B2B</li>
+                        <li>» Y mucho +</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="temas-col p-3">
+                    <h2>¡Y más!<br><span style="color:#E8A022;font-size: 22px;">Radar 2021: la revolución del mercado de pagos e innovación financiera un año después del BIG BANG</span></h2>
+                    <ul class="list-unstyled mt-3">
+                        <li>» Impacto y oportunidades de pagos instantáneos</li>
+                        <li>» Evolución de la billetera digital</li>
+                        <li>» Recompensas de fidelidad en tiempo real</li>
+                        <li>» Super APPs</li>
+                        <li>» Pagos móviles</li>
+                        <li>» Biometría</li>
+                        <li>» Cryptodatos</li>
+                        <li>» Pagos P2P</li>
+                        <li>» Pagos invisibles</li>
+                        <li>» IoT y pagos activados por voz</li>
+                        <li>» Fraude: enfrentando el desafío de la seguridad</li>
+                        <li>» Experiencia del cliente: CX como foco de un nuevo modelo de negocios en pagos</li>
+                        <li>» Cultura brasilera en pagos y cambio de mindset</li>
+                        <li>» Pagos B2B</li>
+                        <li>» Y mucho +</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid numeros2020">
+        <div class="row">
+            <div class="col-lg-4 offset-lg-4 py-3">
+                <h2 class="text-center">Mire cuanta gente ya interactuó en CMS 365 durante Fin & Pay 2020!!</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 offset-lg-3 panel">
+                <div class="row">
+                    <div class="col-lg-4 align-items-stretch">
+                        <div class="info info1">
+                            <div><img src="https://i.imgur.com/SCYtozN.png" alt=""></div>
+                            <div class="data">
+                                <h2>854</h2>
+                                <p>personas que participaron.<br>Entradas únicas</p>
+                            </div>
+                        </div>
+                        <div class="info info2 mt-2">
+                            <div><img src="https://i.imgur.com/KIb2nR0.png" alt=""></div>
+                            <div class="data">
+                                <h2>503</h2>
+                                <p>mensajes enviados</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 align-items-stretch">
+                        <div class="info info3 mt-2">
+                            <div><img src="https://i.imgur.com/fmqUldq.png" alt=""></div>
+                            <div class="data">
+                                <h2>1492</h2>
+                                <p>expectadores en vivo. Total de todas las charlas</p>
+                            </div>
+                        </div>
+                        <div class="info info4 mt-2">
+                            <div><img src="https://i.imgur.com/TzYFbam.png" alt=""></div>
+                            <div class="data">
+                                <h2>7</h2>
+                                <p>Foros</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="info info5 mt-2">
+                            <div><img src="https://i.imgur.com/purfNsz.png" alt=""></div>
+                            <div class="data">
+                                <h2>297</h2>
+                                <p>reuniones generadas</p>
+                            </div>
+                        </div>
+                        <div class="info info6 mt-2">
+                            <div><img src="https://i.imgur.com/hH9VDp9.png" alt=""></div>
+                            <div class="data">
+                                <h2>159</h2>
+                                <p>tarjetas compartidas</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid participan">
+        <div class="row py-4">
+            <div class="col-lg-5 mx-auto">
+                <h2>¿Quién va a participar?</h2>
+                <h3 class="pt-2">Si usted es un ejecutivo de la industria de pagos, bancos, retail o Fintech, Fin & Pay 2021 está hecho especialmente para usted.<br><span>Son 3 días de evento con inscripciones gratuitas que va a reunir líderes de todo el ecosistema financiero de América Latina con foco en:</span></h3>
+                <p class="lista pb-4">Bancos <span>|</span> Emisores de tarjetas <span>|</span> Adquirientes <span>|</span> Subadquirientes <span>|</span> Flags Gateways <span>|</span> APIs <span>|</span> Empresas centradas en tecnologías de pago como NFC, Contactless, E-wallets, Pago digital, Biometría, etc. <span>|</span>  Venta minorista <span>|</span> E-commerce <span>|</span> Administradores de tarjetas <span>|</span> Fintechs <span>|</span> Machinery Companies <span>|</span> Empresas de datos <span>|</span> Consultorías de mercado <span>|</span> Empresas de seguridad, riesgo, fraude</p>
+
+                <div class="participantes">
+                    <div class="row">
+                        <div class="col">
+                            <span class="titulo">Hecho para Líderes de hoy y mañana</span>
+                        </div>
+                    </div>
+                    <div class="row g-3">
+                        <div class="col-lg-3">
+                            <div class="numeros">
+                                    <img src="https://i.imgur.com/MiP9H9s.png" alt="" class="d-block img-fluid">
+                                    <div class="numeros-info">
+                                        <h2>32%</h2>
+                                        <h3>Directoría</h3>
+                                        <p>CEOs<br>
+                                            Presidentes<br>
+                                            Vicepresidentes<br>
+                                            Socios y Directores</p>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="numeros">
+                                    <img src="https://i.imgur.com/zgyzN2S.png" alt="" class="d-block img-fluid">
+                                    <div class="numeros-info">
+                                        <h2>41%</h2>
+                                        <h3>Gerentes generales</h3>
+                                        <p>Gerentes de área</p>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="numeros">
+                                    <img src="https://i.imgur.com/FoTIuC6.png" alt="" class="d-block img-fluid">
+                                    <div class="numeros-info">
+                                        <h2>14%</h2>
+                                        <h3>Jefes de Área</h3>
+                                        <p>Supervisores</p>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="numeros">
+                                    <img src="https://i.imgur.com/wDEsui1.png" alt="" class="d-block img-fluid">
+                                    <div class="numeros-info">
+                                        <h2>14%</h2>
+                                        <h3>Consultores</h3>
+                                        <p>Otros</p>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid pre-footer">
+        <div class="row py-4">
+            <div class="col-lg-6 mx-auto text-center">
+                <h2>¡Forma parte de esta experiencia!</h2>
+                <div class="botones mt-3 d-flex justify-content-between flex-column flex-lg-row">
+                    <a href="https://live.eventtia.com/es/finpay2021/Brochure/" class="mt-3 mt-lg-0"><img src="https://i.imgur.com/n91C3VN.png" alt="">Decargar Brochure</a>
+                    <a href="mailto:e.cortez@cmspeople.com?subject=Finpay2021" target="_blank" class="mt-3 mt-lg-0"><img src="https://i.imgur.com/LSrOBeH.png" alt="">Mas información</a>
+                    <a href="mailto:madi@cmspeople.com?subject=Finpay2021" target="_blank" class="mt-3 mt-lg-0"><img src="https://i.imgur.com/n678O0j.png" alt="">¿Quieres ser sponsor?</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,756 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;600;700&display=swap" rel="stylesheet">
+   <title>Business Revolution Week</title>
+
+<style>
+      body {
+        font-family: 'Barlow', sans-serif;
+        background-color: #000;
+    }
+
+    .wrap {
+        width: 100vw;
+    }
+
+    .hero {
+        background-image: url(https://i.imgur.com/A48erg3.png);
+        background-position: center center;
+        background-size: cover;
+        padding: 30px 0;
+        color:#ffffff;
+    }
+
+    .hero .logo{
+        width:100%;
+        max-width: 415px;
+    }
+
+    .hero .destacado-header{
+        border:1px solid #EB008B;
+    }
+
+    .hero .logos-header {
+        max-width: 285px;
+    }
+
+    .items {
+        background-color: #EB008B;
+        color:#ffffff;
+        line-height: 1;
+    }
+
+    .items > span {
+        border-right: 1px solid #ffffff;
+        font-weight: 600;
+        font-size: 13px;
+    }
+
+    .items > span:last-child {
+        border-right: none;
+    }
+
+    .pre-novo-formato {
+        background-color: #DBDBE0;
+        font-size: 1em;
+        line-height: 1.2;
+        color: #000;
+        font-weight: 400;
+    }
+
+    .pre-novo-formato-destaque {
+        font-size: 2em;
+        font-weight: 700;
+        display: block;
+        margin-top: 20px;
+    }
+
+
+    .section--novo-formato {
+        background-image: url(https://i.imgur.com/A02oper.jpg);
+        background-position: center center;
+        background-size: cover;
+    }
+
+    .col--novo-formato {
+        padding-top: 290px;
+        margin-bottom: -45px;
+    }
+
+    .novo-formato {
+        background: #000;
+        color:#ffffff;
+        border-radius: 20px;
+    }
+
+    .novo-formato h2 {
+        font-size: 50px;
+        font-weight: 600;
+    }
+
+    #networking {
+        padding: 70px 0;
+        background-color: #DBDBE0;
+    }
+
+    #networking h2 {
+        color:#EB008B;
+        font-size: 2.9rem;
+        line-height: 2.9rem;
+        font-weight: 600;
+    }
+
+    #numeros {
+        background-color: #000000;
+    }
+
+    #numeros .numeros-destacado {
+        background-color: #FF8300;
+        padding: 15px;
+        border-radius: 10px;
+        color:#ffffff;
+    }
+    
+    #numeros .numeros-destacado h3 {
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 2rem;
+    }
+    
+    #numeros .numeros-destacado p {
+        font-size: .9rem;
+        font-weight: 400;
+        line-height: 1rem;
+    }
+
+    .col--numeros {
+        margin-top: -40px;
+    }
+
+    .numeros--icono {
+        width: 100%;
+        max-width: 100px;
+    }
+
+    .numeros--titulo {
+        font-size: 2.3rem;
+        line-height: 2.3rem;
+        font-weight: 700;
+        color:#FF8300;
+    }
+
+    .numeros--text1 {
+        font-size: 1.1rem;
+        line-height: 1.3rem;
+        color:#ffffff
+    }
+    
+    .numeros--text2 {
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+        color:#FF8300;
+        font-weight: 600;
+    }
+
+    .numeros--titulo2 {
+        font-size: 3rem;
+        line-height: 3.2rem;
+        font-weight: 700;
+        color:#DBDBE0;
+    }
+
+    .numeros--cols h3 {
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+        color:#ffffff;
+
+    }
+    
+    .numeros--cols ul {
+        font-size: .9rem;
+        line-height: 1.2rem;
+        color:#ffffff;
+    }
+
+    .numeros--cols ul li:not(:first-child) {
+        margin-top: 10px;
+    }
+
+    .numeros--cols .numeros--color1 {
+        background-color:#FF8300;
+    }
+    
+    .numeros--cols .numeros--color2 {
+        background-color:#EB008B;
+    }
+    
+    .numeros--cols .numeros--color3 {
+        background-color:#007FBD;
+    }
+    
+    .numeros--cols .numeros--color4 {
+        background-color:#E74848;
+    }
+    
+    .numeros--cols .numeros--color5 {
+        background-color:#662DA2;
+    }
+
+    .border-color1 {
+        border-color: #EB008B !important;
+    }
+
+    #programa {
+        background-image: url(https://i.imgur.com/INT9SUZ.jpg);
+        background-position: center center;
+        background-size: cover;
+    }
+
+    .programa--titulo1 {
+        display: inline-block;
+        background-color: #EB008B;
+        padding: 10px 15px;
+        font-size: 3rem;
+        line-height: 3rem;
+        font-weight: 700;
+        color:#ffffff;
+        margin-top: -30px;
+        border-radius: 8px;
+    }
+
+    .programa--online {
+        background-color:#FF8300;
+        border-radius: 10px;
+        padding: 15px;
+    }
+
+    .programa--online img {
+        width: 100%;
+        max-width: 119px;
+    }
+
+    .programa--titulo2 {
+        padding: 10px;
+        font-size: 1.3rem;
+        line-height: 1.5rem;
+        font-weight: 300;
+        color:#ffffff;
+        border-radius: 8px;
+        border:1px solid #ffffff;
+        text-align: center;
+    }
+
+    .programa--presencial {
+        background-color:#662DA2;
+        border-radius: 10px;
+        padding: 15px;
+    }
+
+    .programa--titulo3 {
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+        font-weight: 700;
+        color:#ffffff;
+        margin: 0;
+    }
+    
+    .programa--titulo4 {
+        font-size: 1.9rem;
+        line-height: 1.9rem;
+        font-weight: 700;
+        color:#ffffff;
+        margin: 0;
+    }
+
+    .programa--texto1 {
+        font-size: 1.3rem;
+        line-height: 1.3rem;
+        color:#ffffff;
+        font-weight: 400;
+    }
+    
+    .programa--texto2 {
+        font-size: 1.6rem;
+        line-height: 1.6rem;
+        color:#ffffff;
+        font-weight: 600;
+    }
+
+    #contenido {
+        background-color: #000;
+    }
+
+    .verticales {
+        padding: 15px;
+        border-radius: 20px;
+        text-align: center;
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+        color:#ffffff;
+        font-weight: 400;
+    }
+
+    .verticales--texto1 {
+        font-size: 1.5rem;
+        line-height: 1.7rem;
+    }
+
+    .vertical1 {
+        background-color: #E74848;
+    }
+
+    .vertical1 img {
+        width: 100%;
+        max-width: 262px;
+    }
+    
+    .vertical2 {
+        background-color: #007FBD;
+    }
+
+    .vertical2 img {
+        width: 100%;
+        max-width: 258px;
+    }
+    
+    .vertical3 {
+        background-color: #FF8300;
+    }
+
+    .vertical3 img {
+        width: 100%;
+        max-width: 297px;
+    }
+    
+    .vertical4 {
+        background-color: #662DA2;
+    }
+
+    .vertical4 img {
+        width: 100%;
+        max-width: 348px;
+    }
+    
+    .vertical5 {
+        background-color: #06A2A7;
+    }
+
+    .vertical5 img {
+        width: 100%;
+        max-width: 366px;
+    }
+    
+    .vertical6 {
+        background-color: #E62279;
+    }
+
+    .vertical6 img {
+        width: 100%;
+        max-width: 306px;
+    }
+
+    #pase-free {
+        background-color: #DBDBE0;
+        color:#000000;
+    }
+
+    #pase-free img {
+        width: 100%;
+        max-width: 292px;
+    }
+
+    #pase-free h2 {
+        font-size: 52px;
+        line-height: 1;
+        font-weight: 600;
+        font-style: italic;
+    }
+
+    .pase--texto {
+        font-size: 20px;
+        line-height: 1;
+        font-weight: 600;
+    }
+    
+    .pase--texto2 {
+        font-size: 20px;
+        line-height: 1;
+        font-weight: 400;
+    }
+
+    #expos {
+        background-color: #000000;
+        color:#ffffff;
+    }
+
+    .expos--comercial {
+        width: 100%;
+        max-width: 346px;
+    }
+
+    .expos--back {
+        background-image: url(https://i.imgur.com/2EgBmRl.jpg);
+        background-position: center center;
+        background-size: cover;
+        min-height: 330px;
+    }
+
+    .expos--texto1 {
+        text-align: center;
+        color:#ffffff;
+        font-size: 18px;
+        line-height: 1.3;
+        background-color:#EB008B;
+        padding: 15px;
+        border-radius: 10px;
+        margin-top: -40px;
+    }
+
+    .expos--innov {
+        width: 100%;
+        max-width: 241px;
+    }
+
+    .expos--innov-texto {
+        padding: 15px;
+        background-color:#F19002;
+        color:#ffffff;
+        font-size: 14px;
+        line-height: 1.2;
+        font-weight: 400;
+        text-align: center;
+        border-radius: 10px;
+    }
+
+    .expos--innov-texto h2{
+        font-weight: 700;
+        font-size: 22px;
+    }
+    
+    .expos--startup {
+        width: 100%;
+        max-width: 236px;
+    }
+
+    .expos--startup-texto {
+        padding: 15px;
+        background-color:#F5D500;
+        color:#191937;
+        font-size: 14px;
+        line-height: 1.2;
+        font-weight: 400;
+        text-align: center;
+        border-radius: 10px;
+    }
+
+    .expos--startup-texto h2{
+        font-weight: 700;
+        font-size: 22px;
+    }
+
+    #premio {
+        background-color: #000;
+        margin-bottom: 50px;
+    }
+
+    .premio--back {
+        background-image: url(https://i.imgur.com/NlkZiAX.jpg);
+        background-position: center center;
+        background-size: cover;
+        min-height: 500px;
+    }
+
+    .premio--info {
+        background-color: #fff;
+        padding: 15px;
+        border-radius: 10px;
+        margin-bottom: -30px;
+        text-align: center;
+        color:#093952;
+        font-weight: 400;
+    }
+
+    .premio--titulo {
+        width: 100%;
+        max-width: 600px;
+        margin-top: -80px;
+    }
+
+    .premio--footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color:#F6DB96;
+        text-align: left;
+        background-color:#093952;
+        padding: 10px 20px;
+        border-radius: 10px;
+        margin-bottom: -40px;
+        font-weight: 700;
+        font-size: 18px;
+    }
+
+    .premio--footer-logo {
+        width: 100%;
+        max-width: 168px;
+    }
+
+    .premio--logos {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: 80px;
+    }
+
+    .premio--logos h2 {
+        color:#093952;
+        text-align: center;
+        font-weight: 700;
+        line-height: 1;
+        font-size: 2em;
+        text-transform: uppercase;
+        padding: 0 15%;
+    }
+
+    #footer--contacto {
+        background-color:#EB008B;
+    }
+    
+    #footer--contacto h2 {
+        color:#fff;
+        font-size: 2.2rem;
+        line-height: 1.1;
+        font-weight: 700;
+    }
+
+    .btn-brochure {
+        width: 100%;
+        max-width: 119px;
+    }
+    
+    .btn-informacion {
+        width: 100%;
+        max-width: 170px;
+    }
+    
+    .btn-patrocinador {
+        width: 100%;
+        max-width: 204px;
+    }
+
+    #formulario h2 {
+        color:#fff;
+        font-size: 2.2rem;
+        line-height: 1.1;
+        font-weight: 700;
+    }
+
+    #sponsors {
+        background-color: #fff;
+    }
+
+    #sponsors .logos img {
+        margin-left: 30px;
+    }
+
+    #openthon {
+        border-top: 8px solid #00EEFF;
+        background-color: #000000;
+        background-image: url(https://imgur.com/n1hyxHs.png);
+        background-size: cover;
+        background-position: center top;
+        padding-top: 70px;
+    }
+
+    .novidade {
+        background-color: #00EEFF;
+        padding: 10px 15px;
+        text-align: center;
+        font-size: 2.7em;
+        line-height: 1;
+        font-weight: 700;
+        display: block;
+        border-radius: 10px;
+    }
+    
+    .openthon-title {
+        font-size: 1.5em;
+        line-height: 1;
+        color:#ffffff;
+        font-weight: 700;
+        text-align: center;
+        display: block;
+    }
+    
+    .openthon-txt {
+        font-size: 1em;
+        line-height: 1;
+        color:#ffffff;
+        font-weight: 400;
+        text-align: center;
+        display: block;
+    }
+    
+    .openthon-desc {
+        background-color: #00EEFF;
+        padding: 10px 15px;
+        text-align: center;
+        font-size: 1em;
+        line-height: 1;
+        font-weight: 400;
+        display: block;
+        border-radius: 10px;
+        color:#000000;
+    }
+    
+    .openthon-desc h2 {
+        font-size: 1.8em;
+        font-weight: 700;
+    }
+
+    .openthon-desc a {
+        text-decoration: none;
+        color:#000000;
+    }
+
+
+    /* ESTILOS MOBILE */
+
+    @media (max-width:425px) {
+        .items > span {
+            border-right: none !important;
+        }
+
+        .col--novo-formato {
+        padding-top: 150px;
+        margin-bottom: -45px;
+    }
+
+    .novo-formato h2 {
+        font-size: 35px;
+    }
+
+    #footer--contacto h2 {
+        font-size: 1.6rem;
+    }
+    }
+</style>
+
+<header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col hero">
+                    <img src="https://i.imgur.com/S7rOqhO.png" alt="" class="img-fluid logo mx-auto d-block">
+                    <div class="d-flex justify-content-center mt-3 mb-5">
+                        <div>De 8 a 17 de novembro</div>
+                        <div class="d-block ms-3 px-2 rounded destacado-header">Plataforma 365 / Pró Magno Centro de Eventos</div>
+                    </div>
+                    <img src="https://imgur.com/F4r6mLa.png" alt="" class="img-fluid logos-header d-block mx-auto">                </div>
+            </div>
+            <div class="row">
+                <div class="col items py-4 d-flex flex-sm-row flex-column align-items-center justify-content-center">
+                        <span class="pe-3 me-3 text-center py-2 py-sm-0">BIG DATA &<br>ANALYTICS</span>
+                        <span class="pe-3 me-3 text-center py-2 py-sm-0">DIGITAL<br>DISRUPTION</span>
+                        <span class="pe-3 me-3 text-center py-2 py-sm-0">CRÉDITO &<br>COBRANÇA</span>
+                        <span class="pe-3 me-3 text-center py-2 py-sm-0">B2B</span>
+                        <span class="pe-3 me-3 text-center py-2 py-sm-0">FINTECH</span>
+                        <span class="pe-3 me-3 text-center py-2 py-sm-0">LAWTECH</span>
+                        <span class="pe-3 me-3 text-center py-2 py-sm-0">INSURTECH</span>
+                        <span class="pe-3 me-3 text-center py-2 py-sm-0">OPEN<br>BANKING</span>
+                        <span class="pe-3 me-3 text-center py-2 py-sm-0">CX</span>
+                        <span class="pe-3 me-3 text-center py-2 py-sm-0">CONSUMO</span>
+                        <span class="text-center">PRÊMIO BEST<br>PERFORMANCE</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="novo-formato">
+    <div class="container-fluid pre-novo-formato">
+        <div class="row justify-content-center">
+            <div class="col py-4 text-center">
+                <iframe width="774" height="435" src="https://www.youtube.com/embed/Dv8OC86vknc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-5 py-5 text-center">
+                    <h2>Pela primeira vez, ESTAMOS OPEN!</h2>
+                    <p>O <strong>CMS Business Revolution</strong> acompanha todas as evoluções dos mercados que engloba e está alinhado com a vanguarda em que empresas, consumidores, marcas e todo ecossistema financeiro estão vivendo. Por isso, em 2021 o conceito do nosso evento será esse: <strong>ESTAMOS OPEN</strong>.</p>
+                    <p>Estamos abertos novamente no <strong>plano físico</strong>, estamos abertos em flexibilização na entrada para nossa feira de negócios, estamos abertos ao digital como um novo ambiente de negócios, estamos abertos às novas empresas e revoluções com nosso <strong>Openthon</strong> (nosso Hackathon voltado às verticais de Open Banking, Open Finance e Open Data), temos a nossa Open Innovation Arena para gerar negócios... Enfim, se há muito tempo nós sempre procuramos estar à frente e antecipar aquilo que o mercado precisava discustir, entender e reger, agora nossa intenção é estar ao lado de todos. Estamos abertos à inovação e ao mundo das novas ideias. <span class="pre-novo-formato-destaque">Estamos de portas abertas para você!</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid section--novo-formato">
+            <div class="row align-items-end">
+                <div class="col-lg-4 offset-lg-4 col--novo-formato">
+                        <div class="novo-formato text-center p-3">
+                            <h2>NOVO FORMATO!</h2>
+                            <p class="m-0">O MAIOR POOL DE EVENTOS DO SEU MERCADO AGORA É FÍSICO E DIGITAL, PARA AMPLIAR AS OPORTUNIDADES DE NEGÓCIO ANTES, DURANTE E APÓS A SUA REALIZAÇÃO.</p>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="wrap" id="networking">
+        <div class="container">
+            <div class="row g-lg-5">
+                <div class="col-lg-4 offset-lg-2 text-start text-lg-end d-flex align-items-center">
+                    <h2 class="pe-4 pe-lg-0">Networking e interação elevados à máxima Potência!</h2>
+                </div>
+                <div class="col-lg-4 d-flex align-items-center">
+                        <ul class="list-unstyled">
+                            <li><span style="color:#EB008B">• </span><strong>7 dias</strong> entre os ambientes físico e digital</li>
+                            <li><span style="color:#EB008B">• </span><strong>1 dia de Congresso Presencial</strong> com o melhor dos conteúdos e speakers do mercado</li>
+                            <li><span style="color:#EB008B">+ </span><strong>1 dia em formato Feira de Negócios</strong>, com passe FREE no Pro Magno Centro de Eventos</li>
+                            <li><span style="color:#EB008B">+ </span><strong>2.500 pessoas</strong> online e presencialmente</li>
+                            <li><span style="color:#EB008B">+ </span><strong>50 espaços de conteúdos ao vivo e a la carte</strong>, na plataforma e no Pro Magno Centro de Eventos</li>
+                            <li><span style="color:#EB008B">+ </span><strong>150 speakers</strong> renomados</li>
+                            <li><span style="color:#EB008B">• </span><strong>Novas formas de participar:</strong> Passe Free e Passe Combo</li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="numeros" class="wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2 col--numeros">
+                    <div class="numeros-destacado">
+                        <div class="row">
+                            <div class="col-lg-2 offset-lg-1 d-flex justify-content-start align-items-center flex-column text-center">
+                                <img src="https://i.imgur.com/0SvARru.png" alt="" class="numeros--icono">
+                                <h3>+20 MIL</h3>
+                                <p>Inscritos nos eventos com a marca CMS Group ao redor do mundo</p>
+                            </div>
+                            <div class="col-lg-2 d-flex justify-content-start align-items-center flex-column text-center">
+                                <img src="https://i.imgur.com/f7QFmzi.png" alt="" class="numeros--icono">
+                                <h3>+300 H</h3>
+                                <p>de conteúdo exclusivo</p>
+                            </div>
+                            <div class="col-lg-2 d-flex justify-content-start align-items-center flex-column text-center">
+                                <img src="https://i.imgur.com/YHjYMmm.png" alt="" class="numeros--icono">
+                                <h3>+500</h3>
+                                <p>speakers experts participando dos conteúdos ao vivo e a la carte</p>
+                            </div>
+                            <div class="col-lg-2 d-flex justify-content-start align-items-center flex-column text-center">
+                                <img src="https://i.imgur.com/smEJlsg.png" alt="" class="numeros--icono">
+                                <h3>+500</h3>
+                                <p>reuniões geradas dentro da plataforma</p>
+                            </div>
+                            <div class="col-lg-2 d-flex justify-content-start align-items-center flex-column text-center">
+                                <img src="https://i.imgur.com/cabWIP5.png" alt="" class="numeros--icono">
+                                <h3>+5 MIL</h3>
+                                <p>cartões trocados entre participantes</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-4"></div>
+            
+        </div>
+    </section>
