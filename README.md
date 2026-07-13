@@ -1,6 +1,6 @@
 # Mauro Cardinali
 
-Mar del Plata, Buenos Aires, Argentina · +54 9 223 663-0257 · [mcfingers@gmail.com](mailto:mcfingers@gmail.com) · [linkedin.com/in/mcardinali](http://linkedin.com/in/mcardinali)
+Mar del Plata, Buenos Aires, Argentina · +54 9 223 663-0257 · [mcfingers@gmail.com](mailto:mcfingers@gmail.com) · [linkedin.com/in/mcardinali](http://linkedin.com/in/mcardinali){:target="_blank"}
 
 Tech: HTML5, CSS3, SCSS, JavaScript, TypeScript, React, WordPress, Git, Jira, Figma, Webflow, HTML Email
 
@@ -23,17 +23,17 @@ In this repo you’ll see some of my work in web development
 
 ### CMS landings
 
-Landings developed for [CMS Latam](https://www.cmspeople.com)
+Landings developed for [CMS Latam](https://www.cmspeople.com){:target="_blank"}
 
-- Digital Week B2B → [Link](https://mcfingers.github.io/B2B/)
-- Business Revolution Week → [Link](https://mcfingers.github.io/Business%20Revolution%20Week/)
-- Finpay → [Link](https://mcfingers.github.io/Finpay/)
-- IFC 2022 → [Link](https://mcfingers.github.io/IFC%202022)
+- Digital Week B2B → [Link](https://mcfingers.github.io/B2B/){:target="_blank"}
+- Business Revolution Week → [Link](https://mcfingers.github.io/Business%20Revolution%20Week/){:target="_blank"}
+- Finpay → [Link](https://mcfingers.github.io/Finpay/){:target="_blank"}
+- IFC 2022 → [Link](https://mcfingers.github.io/IFC%202022){:target="_blank"}
 
 ### No-Medal eComm (TiendaNube)
 
-eCommerce customization for No-Medal company inside TiendaNube ecosystem → [Link](https://no-medal.com)
+eCommerce customization for No-Medal company inside TiendaNube ecosystem → [Link](https://no-medal.com){:target="_blank"}
 
 ### Sustenlogic landing
 
-Landing page for Sustenlogic SAS → [Link](https://sustenlogic-landing.netlify.app/)
+Landing page for Sustenlogic SAS → [Link](https://sustenlogic-landing.netlify.app/){:target="_blank"}
