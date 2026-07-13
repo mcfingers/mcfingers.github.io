@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/static/css/main.cf30008c.css",
-    "main.js": "/static/js/main.99cfa813.js",
-    "static/js/453.be906ddd.chunk.js": "/static/js/453.be906ddd.chunk.js",
-    "static/media/hand-holding-eco-friendly-green-living-symbol 2.jpg": "/static/media/hand-holding-eco-friendly-green-living-symbol 2.3895f0673b3129a17673.jpg",
-    "static/media/cmo.png": "/static/media/cmo.f404a4af9ee700fd3162.png",
-    "static/media/cto.png": "/static/media/cto.14bad640d448e01b625c.png",
-    "static/media/digital.png": "/static/media/digital.e6dfe4cd6c98fa5239e0.png",
-    "static/media/lang-icon-es.svg": "/static/media/lang-icon-es.5841b2a26c5ea8a7b7c2e3db00dc2690.svg",
-    "static/media/sustenlogic-logo-footer.svg": "/static/media/sustenlogic-logo-footer.bb17ce322a5fa9de828a02a233dcc2af.svg",
-    "static/media/logo-fullcolor.svg": "/static/media/logo-fullcolor.17c055d134dc54571d1793847fc97dcf.svg",
-    "static/media/logo-recuperapp.png": "/static/media/logo-recuperapp.a07926cafa23ab104b22.png",
-    "static/media/lang-icon-en.svg": "/static/media/lang-icon-en.521f188900bac0b64e6134cc8b2172e2.svg",
-    "static/media/in.svg": "/static/media/in.387aa2970a30cb2d277be66a3a511b80.svg",
-    "static/media/sustenlogic-iso.svg": "/static/media/sustenlogic-iso.1c7bd3c0056e2678f7a18ca6a0f69309.svg",
-    "static/media/mail.svg": "/static/media/mail.a109a870eb45f60bf9d6f9965792b86e.svg",
-    "static/media/lk.svg": "/static/media/lk.c34629a8bc0fcdb4c898cc78824497ba.svg",
-    "index.html": "/index.html",
-    "static/media/bg-servicios.svg": "/static/media/bg-servicios.a040b819b0580e67722ae53e22547428.svg",
-    "main.cf30008c.css.map": "/static/css/main.cf30008c.css.map",
-    "main.99cfa813.js.map": "/static/js/main.99cfa813.js.map",
-    "453.be906ddd.chunk.js.map": "/static/js/453.be906ddd.chunk.js.map"
+    "main.css": "./static/css/main.cf30008c.css",
+    "main.js": "./static/js/main.17fbc24a.js",
+    "static/js/453.be906ddd.chunk.js": "./static/js/453.be906ddd.chunk.js",
+    "static/media/hand-holding-eco-friendly-green-living-symbol 2.jpg": "./static/media/hand-holding-eco-friendly-green-living-symbol 2.3895f0673b3129a17673.jpg",
+    "static/media/cmo.png": "./static/media/cmo.f404a4af9ee700fd3162.png",
+    "static/media/cto.png": "./static/media/cto.14bad640d448e01b625c.png",
+    "static/media/digital.png": "./static/media/digital.e6dfe4cd6c98fa5239e0.png",
+    "static/media/lang-icon-es.svg": "./static/media/lang-icon-es.5841b2a26c5ea8a7b7c2e3db00dc2690.svg",
+    "static/media/sustenlogic-logo-footer.svg": "./static/media/sustenlogic-logo-footer.bb17ce322a5fa9de828a02a233dcc2af.svg",
+    "static/media/logo-fullcolor.svg": "./static/media/logo-fullcolor.17c055d134dc54571d1793847fc97dcf.svg",
+    "static/media/logo-recuperapp.png": "./static/media/logo-recuperapp.a07926cafa23ab104b22.png",
+    "static/media/lang-icon-en.svg": "./static/media/lang-icon-en.521f188900bac0b64e6134cc8b2172e2.svg",
+    "static/media/in.svg": "./static/media/in.387aa2970a30cb2d277be66a3a511b80.svg",
+    "static/media/sustenlogic-iso.svg": "./static/media/sustenlogic-iso.1c7bd3c0056e2678f7a18ca6a0f69309.svg",
+    "static/media/mail.svg": "./static/media/mail.a109a870eb45f60bf9d6f9965792b86e.svg",
+    "static/media/lk.svg": "./static/media/lk.c34629a8bc0fcdb4c898cc78824497ba.svg",
+    "index.html": "./index.html",
+    "static/media/bg-servicios.svg": "./static/media/bg-servicios.a040b819b0580e67722ae53e22547428.svg",
+    "main.cf30008c.css.map": "./static/css/main.cf30008c.css.map",
+    "main.17fbc24a.js.map": "./static/js/main.17fbc24a.js.map",
+    "453.be906ddd.chunk.js.map": "./static/js/453.be906ddd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cf30008c.css",
-    "static/js/main.99cfa813.js"
+    "static/js/main.17fbc24a.js"
   ]
 }
