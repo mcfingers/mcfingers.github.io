@@ -34,6 +34,14 @@ Landings developed for [CMS Latam](https://www.cmspeople.com)
 
 eCommerce customization for No-Medal company inside TiendaNube ecosystem → [Link](https://no-medal.com)
 
-### Sustenlogic landing
+### Sustenlogic
 
 Landing page for Sustenlogic SAS → [Link](https://sustenlogic-landing.netlify.app/)
+
+### Pinturerias Oceano
+
+Wordpress administration → [Link](https://pintureriasoceano.com.ar/)
+
+### Prima MX
+
+Webflow customization for manufacturing company in Mexico → [Link](https://primamx.webflow.io/)
