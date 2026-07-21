@@ -22,6 +22,7 @@ Frontend developer focused on responsive, interactive microsites and web interfa
 In this repo you’ll see some of my work in web development
 
 ### CMS landings
+**Stack:** `HTML` `CSS` `Javascript` `Illustrator`
 
 Landings developed for [CMS Latam](https://www.cmspeople.com)
 
@@ -30,18 +31,37 @@ Landings developed for [CMS Latam](https://www.cmspeople.com)
 - Finpay → [Link](https://mcfingers.github.io/Finpay/)
 - IFC 2022 → [Link](https://mcfingers.github.io/IFC%202022)
 
+---
+
 ### No-Medal eComm (TiendaNube)
+**Stack:** `HTML` `CSS` `Javascript` `Illustrator`
 
 eCommerce customization for No-Medal company inside TiendaNube ecosystem → [Link](https://no-medal.com)
 
+---
+
 ### Sustenlogic
+**Stack:** `HTML` `CSS` `React` `Figma`
 
 Landing page for Sustenlogic SAS → [Link](https://sustenlogic-landing.netlify.app/)
 
+---
+
 ### Pinturerias Oceano
+**Stack:** `HTML` `CSS` `Wordpress` `Illustrator`
 
 Wordpress administration → [Link](https://pintureriasoceano.com.ar/)
 
+---
+
 ### Prima MX
+**Stack:** `HTML` `CSS` `Javascript` `Webflow` `Figma`
 
 Webflow customization for manufacturing company in Mexico → [Link](https://primamx.webflow.io/)
+
+---
+
+### Webflow demo
+**Stack:** `HTML` `CSS` `Webflow` `Figma`
+
+Webflow site developed for demo purposes → [Link](https://mauro-cardinali.webflow.io)
