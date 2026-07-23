@@ -43,7 +43,7 @@ eCommerce customization for No-Medal company inside TiendaNube ecosystem → [Li
 ### Sustenlogic
 **Stack:** `HTML` `CSS` `React` `Figma`
 
-Landing page for Sustenlogic SAS → [Link](https://sustenlogic-landing.netlify.app/)
+Landing page for Sustenlogic SAAS → [Link](https://sustenlogic-landing.netlify.app/)
 
 ---
 
