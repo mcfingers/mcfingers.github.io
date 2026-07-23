@@ -1,6 +1,6 @@
 # Mauro Cardinali
 
-Mar del Plata, Buenos Aires, Argentina · +54 9 223 663-0257 · [mcfingers@gmail.com](mailto:mcfingers@gmail.com) · [linkedin.com/in/mcardinali](http://linkedin.com/in/mcardinali)
+Mar del Plata, Buenos Aires, Argentina · +54 9 223 663-0257 · [mcardinali.dev@gmail.com](mailto:mcardinali.dev@gmail.com) · [linkedin.com/in/mcardinali](http://linkedin.com/in/mcardinali)
 
 Tech: HTML5, CSS3, SCSS, JavaScript, TypeScript, React, WordPress, Git, Jira, Figma, Webflow, HTML Email
 
